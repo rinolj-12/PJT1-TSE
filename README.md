@@ -1,8 +1,13 @@
 # Target Speech Extraction on Edge Device
 
+[![GitHub Release](https://img.shields.io/github/v/release/rinolj-12/PJT1-TSE?color=blue&label=Release&logo=github)](https://github.com/rinolj-12/PJT1-TSE/releases/latest)
+[![Download APK](https://img.shields.io/badge/Download-APK%20(v2.0)-green?logo=android)](https://github.com/rinolj-12/PJT1-TSE/releases/download/v2.0/TSE-Edge-arm64.apk)
+[![Android](https://img.shields.io/badge/Platform-Android%207.0%2B%20(arm64--v8a)-brightgreen?logo=android)](https://github.com/rinolj-12/PJT1-TSE/releases/tag/v2.0)
+[![Offline](https://img.shields.io/badge/Inference-100%25%20Offline-blueviolet)](#try-the-app)
+
 **B.Tech project, Electronics and Computer Engineering, School of Electronics Engineering (SENSE), VIT Chennai**
 
-Johaan Sam Sanil (23BLC1286) · Rinol Jeo Manoj (23BLC1207) · Navneeth Regikumar (23BLC1276)
+Johaan Sam Sanil (23BLC1286) · Rinol Jeo Manoj (23BLC1207) · Navneeth Regikumar (23BLC1276)  
 Guide: A Bharathi Sankar
 
 Several people talk at once; a short recording of one person (the "enrollment") tells the model whose voice to keep.
@@ -10,7 +15,8 @@ This project builds a compact speaker-conditioned neural network that extracts t
 **2, 3 or 4 speakers**, and runs it **fully offline on an Android phone**.
 
 📄 **Report:** [report/TSE_on_Edge_Device_Report.pdf](report/TSE_on_Edge_Device_Report.pdf) ·
-📱 **App:** [app/TSE-Edge-arm64.apk](app/TSE-Edge-arm64.apk)
+🚀 **Release:** [v2.0 Release Page](https://github.com/rinolj-12/PJT1-TSE/releases/latest) ·
+📱 **Download App:** [TSE-Edge-arm64.apk](https://github.com/rinolj-12/PJT1-TSE/releases/download/v2.0/TSE-Edge-arm64.apk) ([local mirror](app/TSE-Edge-arm64.apk))
 
 ![TSE Edge app](docs/figures/app_screenshot.png)
 
@@ -88,13 +94,19 @@ docs/figures/  diagrams and charts used in the report
 
 ## Try the app
 
-1. Copy `app/TSE-Edge-arm64.apk` to an Android phone (Android 7 or newer) and install it
-   (allow "install unknown apps"; if Play Protect warns, choose *Install anyway*).
-2. **Demo** tab: extract one speaker from a bundled 3-speaker recording and listen.
-3. **My voice** tab: record yourself alone, then with others talking, then extract your voice.
-4. **Benchmark** tab: measures speed, quality and real-time streaming on your phone.
+### Download & Installation
 
-Everything runs on the phone; it works in airplane mode.
+* **Direct APK Download:** [TSE-Edge-arm64.apk (v2.0)](https://github.com/rinolj-12/PJT1-TSE/releases/download/v2.0/TSE-Edge-arm64.apk) (~28 MB)
+* **Release Page:** [v2.0 Releases](https://github.com/rinolj-12/PJT1-TSE/releases/latest)
+* **Local Repo Copy:** [`app/TSE-Edge-arm64.apk`](app/TSE-Edge-arm64.apk)
+* **Requirements:** Android 7.0 (API level 24) or higher, 64-bit ARM device (`arm64-v8a`).
+
+1. **Install:** Download the APK directly on your phone or transfer it via USB. Open the file and tap **Install** (enable "Install unknown apps" for your browser/file manager if requested; if Google Play Protect shows a prompt, select *Install anyway*).
+2. **Demo Tab:** Tap to extract one speaker from a bundled 3-speaker recording and compare the original mixture against the extracted speech.
+3. **My Voice Tab:** Record a 3–5 second enrollment clip of yourself alone, record a second clip with multiple people speaking simultaneously, and extract your own voice.
+4. **Benchmark Tab:** Run automated on-device tests measuring inference latency, real-time factor, and streaming performance directly on your phone hardware.
+
+> **Privacy & Offline Guarantee:** Everything runs 100% on-device using INT8 ONNX Runtime. No internet access or network permissions are declared in the manifest; the app operates completely offline (even in airplane mode). Microphones are only accessed during live enrollment recording.
 
 ## Reproduce
 
