@@ -1,0 +1,10 @@
+# Shared settings of the attention experiment: the U-block bottleneck attention is the only
+# change. Everything else is the R=6 recipe (configs/multispk_deep.yaml: from scratch, 2-4
+# speaker dynamic mixing, 80 epochs, seed 42), so each arm compares directly with the saved
+# SE model saved_models/multispk_r6_ep79 (= runs/multispk_deep_r6).
+# attn_dim 256 / 4 heads: +2.76M parameters over SE (16.36M vs 13.60M), same for both arms.
+base: ../multispk_deep.yaml
+
+model:
+  attn_dim: 256
+  attn_heads: 4

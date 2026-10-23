@@ -1,0 +1,25 @@
+# Fine-tune the 2-speaker U-eConv-TSE (saved_models/proposed_2spk_ep74) on dynamically mixed
+# 2-4 speaker mixtures. Same architecture and loss; only the training data and LR change.
+# Validation (and best.pt selection) uses the mean SI-SDRi over 2-, 3- and 4-speaker dev sets.
+base: proposed.yaml
+name: finetune_multispk
+
+data:
+  dynamic_mix:
+    enabled: true
+    n_spk_probs: [0.4, 0.35, 0.25]   # keep 40% 2-speaker mixtures to avoid forgetting
+    level_db_range: [-5.0, 5.0]
+    partial_overlap_prob: 0.25
+    min_overlap: 0.5
+  val_subset: 400                    # Libri2Mix dev (2 speakers)
+  val_name: 2spk
+  extra_val_sets:
+    - {name: 3spk, root: generated/Libri3Mix, split: dev, subset: 400}
+    - {name: 4spk, root: generated/Libri4Mix, split: dev, subset: 400}
+
+train:
+  init_from: saved_models/proposed_2spk_ep74/best.pt
+  lr: 2.5e-4
+  max_epochs: 25
+  lr_patience: 3
+  early_stop_patience: 25            # effectively off: fixed 25-epoch budget

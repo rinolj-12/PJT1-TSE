@@ -1,0 +1,147 @@
+{
+  "model": "r6_multispk",
+  "n_per_set": 200,
+  "sets": {
+    "2spk": {
+      "offline": {
+        "si_sdri": 9.8285098670749,
+        "nsr": 0.07,
+        "ms_per_hop": null
+      },
+      "window 3s hop 100 lookahead 0": {
+        "si_sdri": 7.760062794494442,
+        "nsr": 0.09,
+        "ms_per_hop": 56.22393670607065
+      },
+      "window 3s hop 200 lookahead 100": {
+        "si_sdri": 8.817547258469276,
+        "nsr": 0.09,
+        "ms_per_hop": 56.78446754232842
+      },
+      "window 3s hop 200 lookahead 200": {
+        "si_sdri": 9.179923060494476,
+        "nsr": 0.09,
+        "ms_per_hop": 59.81323525467879
+      },
+      "window 3s hop 250 lookahead 250": {
+        "si_sdri": 9.285514497789555,
+        "nsr": 0.09,
+        "ms_per_hop": 58.685140102677536
+      },
+      "window 3s hop 200 lookahead 300": {
+        "si_sdri": 9.254505094061606,
+        "nsr": 0.09,
+        "ms_per_hop": 61.14269347766572
+      },
+      "window 3s hop 500 lookahead 500": {
+        "si_sdri": 9.525807197871618,
+        "nsr": 0.08,
+        "ms_per_hop": 61.74085791441141
+      },
+      "window 4s hop 200 lookahead 100": {
+        "si_sdri": 8.852588424268179,
+        "nsr": 0.085,
+        "ms_per_hop": 58.5022682361424
+      },
+      "window 2s hop 200 lookahead 100": {
+        "si_sdri": 8.676251970562152,
+        "nsr": 0.09,
+        "ms_per_hop": 58.858333159889696
+      }
+    },
+    "3spk": {
+      "offline": {
+        "si_sdri": 8.634245673269033,
+        "nsr": 0.04,
+        "ms_per_hop": null
+      },
+      "window 3s hop 100 lookahead 0": {
+        "si_sdri": 6.552701553888619,
+        "nsr": 0.05,
+        "ms_per_hop": 69.79315932729409
+      },
+      "window 3s hop 200 lookahead 100": {
+        "si_sdri": 7.488491583541036,
+        "nsr": 0.05,
+        "ms_per_hop": 69.96909066419764
+      },
+      "window 3s hop 200 lookahead 200": {
+        "si_sdri": 7.895492021180689,
+        "nsr": 0.05,
+        "ms_per_hop": 70.98115106947762
+      },
+      "window 3s hop 250 lookahead 250": {
+        "si_sdri": 8.052439175210893,
+        "nsr": 0.045,
+        "ms_per_hop": 69.39566131916193
+      },
+      "window 3s hop 200 lookahead 300": {
+        "si_sdri": 8.060338355414569,
+        "nsr": 0.055,
+        "ms_per_hop": 70.10781626084683
+      },
+      "window 3s hop 500 lookahead 500": {
+        "si_sdri": 8.29222823866643,
+        "nsr": 0.05,
+        "ms_per_hop": 69.1408957807269
+      },
+      "window 4s hop 200 lookahead 100": {
+        "si_sdri": 7.489524776767939,
+        "nsr": 0.05,
+        "ms_per_hop": 71.27159727487657
+      },
+      "window 2s hop 200 lookahead 100": {
+        "si_sdri": 7.309492737837136,
+        "nsr": 0.055,
+        "ms_per_hop": 71.91375382378035
+      }
+    },
+    "4spk": {
+      "offline": {
+        "si_sdri": 7.223771943561733,
+        "nsr": 0.075,
+        "ms_per_hop": null
+      },
+      "window 3s hop 100 lookahead 0": {
+        "si_sdri": 5.520734121790156,
+        "nsr": 0.07,
+        "ms_per_hop": 60.166518991225736
+      },
+      "window 3s hop 200 lookahead 100": {
+        "si_sdri": 6.321048801308498,
+        "nsr": 0.075,
+        "ms_per_hop": 60.09593890540026
+      },
+      "window 3s hop 200 lookahead 200": {
+        "si_sdri": 6.508749325433746,
+        "nsr": 0.075,
+        "ms_per_hop": 59.92434835390093
+      },
+      "window 3s hop 250 lookahead 250": {
+        "si_sdri": 6.59929328638129,
+        "nsr": 0.08,
+        "ms_per_hop": 59.867451067261655
+      },
+      "window 3s hop 200 lookahead 300": {
+        "si_sdri": 6.626516471905634,
+        "nsr": 0.075,
+        "ms_per_hop": 59.5542016886567
+      },
+      "window 3s hop 500 lookahead 500": {
+        "si_sdri": 6.878931134259329,
+        "nsr": 0.075,
+        "ms_per_hop": 59.60600578048171
+      },
+      "window 4s hop 200 lookahead 100": {
+        "si_sdri": 6.342535172877834,
+        "nsr": 0.075,
+        "ms_per_hop": 59.58421446638249
+      },
+      "window 2s hop 200 lookahead 100": {
+        "si_sdri": 6.235199430240318,
+        "nsr": 0.07,
+        "ms_per_hop": 60.58828481832892
+      }
+    }
+  }
+}

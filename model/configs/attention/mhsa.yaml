@@ -1,0 +1,6 @@
+# Multi-head self-attention over time (4 heads of width 64) instead of SE channel attention.
+base: common.yaml
+name: mhsa
+
+model:
+  attention: mhsa

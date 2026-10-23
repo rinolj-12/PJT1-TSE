@@ -1,0 +1,8 @@
+*.apk binary
+*.onnx binary
+*.wav binary
+*.png binary
+*.pdf binary
+*.docx binary
+gradlew text eol=lf
+*.sh text eol=lf

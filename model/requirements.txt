@@ -1,0 +1,20 @@
+# Install torch/torchaudio first with the CUDA build matching your GPU, e.g. (RTX 50xx needs cu128+):
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128
+# Tested with torch 2.11.0+cu128 / torchaudio 2.11.0+cu128 on Python 3.13 (Windows 11, RTX 5090).
+torch>=2.7
+torchaudio>=2.7
+soundfile>=0.12
+numpy>=1.26
+pandas>=2.0
+pyyaml>=6.0
+tqdm>=4.66
+tensorboard>=2.15
+pytest>=8.0
+# optional metrics / models
+fast_bss_eval>=0.1.4   # SDR(i)
+pystoi>=0.4            # STOI
+# pesq>=0.0.4          # PESQ: needs a C compiler on Windows / Python 3.13 (no wheel); skipped if absent
+speechbrain>=1.0       # ECAPA: spk_encoder=ecapa_frozen, loss.lambda_judge, hard-pair mixing
+websockets>=13         # scripts/realtime_server.py (tested with 17.3)
+fastapi>=0.110          # scripts/serve.py (tested with 0.159)
+uvicorn[standard]>=0.29 # scripts/serve.py

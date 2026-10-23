@@ -1,0 +1,258 @@
+{
+  "host": {
+    "cpu": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "cpu_count": 24,
+    "torch": "2.11.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "r3": {
+    "checkpoint": "runs/finetune_multispk/best.pt",
+    "complexity": {
+      "params_total_M": 8.71125,
+      "gflops_extractor_per_s_audio": 2.875005696,
+      "gflops_extractor_3s_window": 8.616603648,
+      "gflops_embedder_4s_enrollment": 9.150119936
+    },
+    "export": {
+      "check": {
+        "embedding_max_abs_diff": 0.0010554790496826172,
+        "estimate_max_abs_diff": 0.22483444213867188,
+        "estimate_si_sdr_vs_torch_db": 58.621437072753906,
+        "estimate_length_ok": true
+      },
+      "files_MB": {
+        "embedder": 13.555026054382324,
+        "extractor": 19.130531311035156,
+        "embedder_int8": 3.425961494445801,
+        "extractor_int8": 5.156028747558594
+      },
+      "params_deployed": {
+        "embedder": 3551238,
+        "extractor": 4984528
+      },
+      "paths": {
+        "embedder": "results\\edge\\r3\\embedder.onnx",
+        "extractor": "results\\edge\\r3\\extractor.onnx",
+        "embedder_int8": "results\\edge\\r3\\embedder_int8.onnx",
+        "extractor_int8": "results\\edge\\r3\\extractor_int8.onnx"
+      }
+    },
+    "accuracy": {
+      "2spk": {
+        "torch_fp32": {
+          "si_sdri": 9.751037243915102,
+          "delta_vs_fp32": 0.0,
+          "nsr": 0.04,
+          "si_sdr_vs_fp32_output_db": null,
+          "n": 150
+        },
+        "torch_fp16": {
+          "si_sdri": NaN,
+          "delta_vs_fp32": NaN,
+          "nsr": 0.0,
+          "si_sdr_vs_fp32_output_db": NaN,
+          "n": 150
+        },
+        "ort_fp32": {
+          "si_sdri": 9.75071383268883,
+          "delta_vs_fp32": -0.0003234112262724409,
+          "nsr": 0.04,
+          "si_sdr_vs_fp32_output_db": 63.21750259399414,
+          "n": 150
+        },
+        "ort_int8": {
+          "si_sdri": 9.688951864552994,
+          "delta_vs_fp32": -0.06208537936210767,
+          "nsr": 0.04,
+          "si_sdr_vs_fp32_output_db": 27.086739540100098,
+          "n": 150
+        }
+      },
+      "3spk": {
+        "torch_fp32": {
+          "si_sdri": 6.842669758399327,
+          "delta_vs_fp32": 0.0,
+          "nsr": 0.11333333333333333,
+          "si_sdr_vs_fp32_output_db": null,
+          "n": 150
+        },
+        "torch_fp16": {
+          "si_sdri": NaN,
+          "delta_vs_fp32": NaN,
+          "nsr": 0.0,
+          "si_sdr_vs_fp32_output_db": NaN,
+          "n": 150
+        },
+        "ort_fp32": {
+          "si_sdri": 6.842410947084427,
+          "delta_vs_fp32": -0.00025881131490024245,
+          "nsr": 0.11333333333333333,
+          "si_sdr_vs_fp32_output_db": 60.49169158935547,
+          "n": 150
+        },
+        "ort_int8": {
+          "si_sdri": 6.754785132110118,
+          "delta_vs_fp32": -0.08788462628920879,
+          "nsr": 0.11333333333333333,
+          "si_sdr_vs_fp32_output_db": 24.371257781982422,
+          "n": 150
+        }
+      },
+      "4spk": {
+        "torch_fp32": {
+          "si_sdri": 6.494179260085026,
+          "delta_vs_fp32": 0.0,
+          "nsr": 0.07333333333333333,
+          "si_sdr_vs_fp32_output_db": null,
+          "n": 150
+        },
+        "torch_fp16": {
+          "si_sdri": NaN,
+          "delta_vs_fp32": NaN,
+          "nsr": 0.0,
+          "si_sdr_vs_fp32_output_db": NaN,
+          "n": 150
+        },
+        "ort_fp32": {
+          "si_sdri": 6.494284442116816,
+          "delta_vs_fp32": 0.00010518203179010754,
+          "nsr": 0.07333333333333333,
+          "si_sdr_vs_fp32_output_db": 58.97706604003906,
+          "n": 150
+        },
+        "ort_int8": {
+          "si_sdri": 6.453621665686369,
+          "delta_vs_fp32": -0.04055759439865714,
+          "nsr": 0.07333333333333333,
+          "si_sdr_vs_fp32_output_db": 23.2229642868042,
+          "n": 150
+        }
+      }
+    }
+  },
+  "r6": {
+    "checkpoint": "saved_models/multispk_r6_ep79/best.pt",
+    "complexity": {
+      "params_total_M": 13.597473,
+      "gflops_extractor_per_s_audio": 5.455025664,
+      "gflops_extractor_3s_window": 16.348176384,
+      "gflops_embedder_4s_enrollment": 9.150119936
+    },
+    "export": {
+      "check": {
+        "embedding_max_abs_diff": 0.0019742846488952637,
+        "estimate_max_abs_diff": 0.9233598709106445,
+        "estimate_si_sdr_vs_torch_db": 53.36023712158203,
+        "estimate_length_ok": true
+      },
+      "files_MB": {
+        "embedder": 13.555026054382324,
+        "extractor": 37.68431091308594,
+        "embedder_int8": 3.4259700775146484,
+        "extractor_int8": 10.126761436462402
+      },
+      "params_deployed": {
+        "embedder": 3551238,
+        "extractor": 9820063
+      },
+      "paths": {
+        "embedder": "results\\edge\\r6\\embedder.onnx",
+        "extractor": "results\\edge\\r6\\extractor.onnx",
+        "embedder_int8": "results\\edge\\r6\\embedder_int8.onnx",
+        "extractor_int8": "results\\edge\\r6\\extractor_int8.onnx"
+      }
+    },
+    "accuracy": {
+      "2spk": {
+        "torch_fp32": {
+          "si_sdri": 11.077357673558096,
+          "delta_vs_fp32": 0.0,
+          "nsr": 0.02,
+          "si_sdr_vs_fp32_output_db": null,
+          "n": 150
+        },
+        "torch_fp16": {
+          "si_sdri": NaN,
+          "delta_vs_fp32": NaN,
+          "nsr": 0.0,
+          "si_sdr_vs_fp32_output_db": NaN,
+          "n": 150
+        },
+        "ort_fp32": {
+          "si_sdri": 11.07788648835073,
+          "delta_vs_fp32": 0.0005288147926343356,
+          "nsr": 0.02,
+          "si_sdr_vs_fp32_output_db": 62.05655097961426,
+          "n": 150
+        },
+        "ort_int8": {
+          "si_sdri": 10.942387548995514,
+          "delta_vs_fp32": -0.13497012456258162,
+          "nsr": 0.02,
+          "si_sdr_vs_fp32_output_db": 28.626684188842773,
+          "n": 150
+        }
+      },
+      "3spk": {
+        "torch_fp32": {
+          "si_sdri": 8.026059643104672,
+          "delta_vs_fp32": 0.0,
+          "nsr": 0.08,
+          "si_sdr_vs_fp32_output_db": null,
+          "n": 150
+        },
+        "torch_fp16": {
+          "si_sdri": NaN,
+          "delta_vs_fp32": NaN,
+          "nsr": 0.0,
+          "si_sdr_vs_fp32_output_db": NaN,
+          "n": 150
+        },
+        "ort_fp32": {
+          "si_sdri": 8.025866645226875,
+          "delta_vs_fp32": -0.00019299787779658573,
+          "nsr": 0.08,
+          "si_sdr_vs_fp32_output_db": 58.7213020324707,
+          "n": 150
+        },
+        "ort_int8": {
+          "si_sdri": 8.05077035776029,
+          "delta_vs_fp32": 0.024710714655618915,
+          "nsr": 0.07333333333333333,
+          "si_sdr_vs_fp32_output_db": 25.682425498962402,
+          "n": 150
+        }
+      },
+      "4spk": {
+        "torch_fp32": {
+          "si_sdri": 7.231320190429687,
+          "delta_vs_fp32": 0.0,
+          "nsr": 0.10666666666666667,
+          "si_sdr_vs_fp32_output_db": null,
+          "n": 150
+        },
+        "torch_fp16": {
+          "si_sdri": NaN,
+          "delta_vs_fp32": NaN,
+          "nsr": 0.0,
+          "si_sdr_vs_fp32_output_db": NaN,
+          "n": 150
+        },
+        "ort_fp32": {
+          "si_sdri": 7.2311061916748685,
+          "delta_vs_fp32": -0.0002139987548188671,
+          "nsr": 0.10666666666666667,
+          "si_sdr_vs_fp32_output_db": 56.843976974487305,
+          "n": 150
+        },
+        "ort_int8": {
+          "si_sdri": 7.159474177360535,
+          "delta_vs_fp32": -0.07184601306915273,
+          "nsr": 0.11333333333333333,
+          "si_sdr_vs_fp32_output_db": 24.09811305999756,
+          "n": 150
+        }
+      }
+    }
+  }
+}

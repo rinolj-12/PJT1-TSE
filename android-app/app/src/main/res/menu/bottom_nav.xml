@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/tab_demo" android:icon="@drawable/ic_sparkle" android:title="Demo" />
+    <item android:id="@+id/tab_mine" android:icon="@drawable/ic_mic" android:title="My voice" />
+    <item android:id="@+id/tab_bench" android:icon="@drawable/ic_bolt" android:title="Benchmark" />
+</menu>

@@ -1,0 +1,18 @@
+<resources>
+    <!-- dark -->
+    <color name="bg">#0F0F0F</color>
+    <color name="surface">#1A1A19</color>
+    <color name="hairline">#2B2B29</color>
+    <color name="ink">#F2F1EE</color>
+    <color name="ink2">#B5B3AD</color>
+    <color name="ink3">#7C7A75</color>
+    <color name="accent">#5A9BEA</color>
+    <color name="accentSoft">#1B2B40</color>
+    <color name="onAccent">#0B0B0B</color>
+    <color name="good">#3CC796</color>
+    <color name="goodSoft">#15302A</color>
+    <color name="warn">#F08A52</color>
+    <color name="waveMix">#55534F</color>
+    <color name="waveRef">#2F7D62</color>
+    <color name="rec">#F2555A</color>
+</resources>

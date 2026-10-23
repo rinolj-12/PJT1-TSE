@@ -1,0 +1,7 @@
+# Differential attention over time (2 heads of width 128, lambda_init by stage depth)
+# instead of SE channel attention. Same parameter count as mhsa (+256 lambda parameters).
+base: common.yaml
+name: diff
+
+model:
+  attention: diff

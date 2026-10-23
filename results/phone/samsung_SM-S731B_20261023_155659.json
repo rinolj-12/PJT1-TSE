@@ -1,0 +1,397 @@
+{
+ "device": "samsung SM-S731B | SoC Samsung s5e9945 | Android 17 (API 37) | 10 cores | RAM 7.0 GB | ABI arm64-v8a",
+ "time": "20261023_155659",
+ "runs": [
+  {
+   "model": "R3 INT8",
+   "threads": 1,
+   "load_ms": 225,
+   "model_mb": 8.58,
+   "enroll_ms": 104.5,
+   "window3s_median_ms": 144.78,
+   "window3s_p90_ms": 147.34,
+   "rtf": 0.0483,
+   "mean_si_sdri_phone": 9.08,
+   "mean_si_sdri_pc": 9.08,
+   "max_abs_diff": 0.068,
+   "streaming": [
+    {
+     "hop_ms": 200,
+     "lookahead_ms": 200,
+     "si_sdri": 6.819,
+     "offline_si_sdri": 6.757,
+     "hop_median_ms": 141.74,
+     "hop_max_ms": 142.53,
+     "realtime": true
+    },
+    {
+     "hop_ms": 500,
+     "lookahead_ms": 500,
+     "si_sdri": 6.577,
+     "offline_si_sdri": 6.757,
+     "hop_median_ms": 141.74,
+     "hop_max_ms": 142.29,
+     "realtime": true
+    }
+   ],
+   "java_heap_mb": 36.2,
+   "samples": [
+    {
+     "id": "2spk_1",
+     "si_sdri": 11.44,
+     "pc": 11.428,
+     "ms": 252.2
+    },
+    {
+     "id": "2spk_2",
+     "si_sdri": 10.272,
+     "pc": 10.284,
+     "ms": 215.6
+    },
+    {
+     "id": "2spk_3",
+     "si_sdri": 10.816,
+     "pc": 10.802,
+     "ms": 237.3
+    },
+    {
+     "id": "3spk_1",
+     "si_sdri": 6.757,
+     "pc": 6.774,
+     "ms": 309.6
+    },
+    {
+     "id": "3spk_2",
+     "si_sdri": 9.565,
+     "pc": 9.549,
+     "ms": 276.4
+    },
+    {
+     "id": "3spk_3",
+     "si_sdri": 9.676,
+     "pc": 9.609,
+     "ms": 327.5
+    },
+    {
+     "id": "4spk_1",
+     "si_sdri": 7.233,
+     "pc": 7.288,
+     "ms": 232.9
+    },
+    {
+     "id": "4spk_2",
+     "si_sdri": 7.564,
+     "pc": 7.584,
+     "ms": 204.9
+    },
+    {
+     "id": "4spk_3",
+     "si_sdri": 8.396,
+     "pc": 8.397,
+     "ms": 203.7
+    }
+   ]
+  },
+  {
+   "model": "R3 INT8",
+   "threads": 4,
+   "load_ms": 117,
+   "model_mb": 8.58,
+   "enroll_ms": 78.87,
+   "window3s_median_ms": 116.46,
+   "window3s_p90_ms": 118.53,
+   "rtf": 0.0388,
+   "mean_si_sdri_phone": 9.08,
+   "mean_si_sdri_pc": 9.08,
+   "max_abs_diff": 0.068,
+   "streaming": [
+    {
+     "hop_ms": 200,
+     "lookahead_ms": 200,
+     "si_sdri": 6.819,
+     "offline_si_sdri": 6.757,
+     "hop_median_ms": 115.57,
+     "hop_max_ms": 124.61,
+     "realtime": true
+    },
+    {
+     "hop_ms": 500,
+     "lookahead_ms": 500,
+     "si_sdri": 6.577,
+     "offline_si_sdri": 6.757,
+     "hop_median_ms": 117.4,
+     "hop_max_ms": 126.88,
+     "realtime": true
+    }
+   ],
+   "java_heap_mb": 26.0,
+   "samples": [
+    {
+     "id": "2spk_1",
+     "si_sdri": 11.44,
+     "pc": 11.428,
+     "ms": 201.6
+    },
+    {
+     "id": "2spk_2",
+     "si_sdri": 10.272,
+     "pc": 10.284,
+     "ms": 176.9
+    },
+    {
+     "id": "2spk_3",
+     "si_sdri": 10.816,
+     "pc": 10.802,
+     "ms": 195.7
+    },
+    {
+     "id": "3spk_1",
+     "si_sdri": 6.757,
+     "pc": 6.774,
+     "ms": 256.0
+    },
+    {
+     "id": "3spk_2",
+     "si_sdri": 9.565,
+     "pc": 9.549,
+     "ms": 223.3
+    },
+    {
+     "id": "3spk_3",
+     "si_sdri": 9.676,
+     "pc": 9.609,
+     "ms": 265.2
+    },
+    {
+     "id": "4spk_1",
+     "si_sdri": 7.233,
+     "pc": 7.288,
+     "ms": 190.8
+    },
+    {
+     "id": "4spk_2",
+     "si_sdri": 7.564,
+     "pc": 7.584,
+     "ms": 163.7
+    },
+    {
+     "id": "4spk_3",
+     "si_sdri": 8.396,
+     "pc": 8.397,
+     "ms": 164.8
+    }
+   ]
+  },
+  {
+   "model": "R6 INT8",
+   "threads": 1,
+   "load_ms": 285,
+   "model_mb": 13.55,
+   "enroll_ms": 96.66,
+   "window3s_median_ms": 274.94,
+   "window3s_p90_ms": 275.98,
+   "rtf": 0.0916,
+   "mean_si_sdri_phone": 9.844,
+   "mean_si_sdri_pc": 9.834,
+   "max_abs_diff": 0.175,
+   "streaming": [
+    {
+     "hop_ms": 200,
+     "lookahead_ms": 200,
+     "si_sdri": 7.353,
+     "offline_si_sdri": 8.823,
+     "hop_median_ms": 284.55,
+     "hop_max_ms": 286.54,
+     "realtime": false
+    },
+    {
+     "hop_ms": 500,
+     "lookahead_ms": 500,
+     "si_sdri": 8.074,
+     "offline_si_sdri": 8.823,
+     "hop_median_ms": 273.45,
+     "hop_max_ms": 282.77,
+     "realtime": true
+    }
+   ],
+   "java_heap_mb": 49.2,
+   "samples": [
+    {
+     "id": "2spk_1",
+     "si_sdri": 11.101,
+     "pc": 11.164,
+     "ms": 467.7
+    },
+    {
+     "id": "2spk_2",
+     "si_sdri": 11.119,
+     "pc": 11.112,
+     "ms": 418.9
+    },
+    {
+     "id": "2spk_3",
+     "si_sdri": 11.036,
+     "pc": 11.076,
+     "ms": 457.4
+    },
+    {
+     "id": "3spk_1",
+     "si_sdri": 8.823,
+     "pc": 8.811,
+     "ms": 593.8
+    },
+    {
+     "id": "3spk_2",
+     "si_sdri": 9.779,
+     "pc": 9.756,
+     "ms": 535.9
+    },
+    {
+     "id": "3spk_3",
+     "si_sdri": 11.192,
+     "pc": 11.017,
+     "ms": 633.2
+    },
+    {
+     "id": "4spk_1",
+     "si_sdri": 8.632,
+     "pc": 8.593,
+     "ms": 449.5
+    },
+    {
+     "id": "4spk_2",
+     "si_sdri": 8.043,
+     "pc": 8.075,
+     "ms": 396.8
+    },
+    {
+     "id": "4spk_3",
+     "si_sdri": 8.866,
+     "pc": 8.903,
+     "ms": 391.3
+    }
+   ]
+  },
+  {
+   "model": "R6 INT8",
+   "threads": 4,
+   "load_ms": 292,
+   "model_mb": 13.55,
+   "enroll_ms": 79.64,
+   "window3s_median_ms": 227.55,
+   "window3s_p90_ms": 231.38,
+   "rtf": 0.0758,
+   "mean_si_sdri_phone": 9.844,
+   "mean_si_sdri_pc": 9.834,
+   "max_abs_diff": 0.175,
+   "streaming": [
+    {
+     "hop_ms": 200,
+     "lookahead_ms": 200,
+     "si_sdri": 7.353,
+     "offline_si_sdri": 8.823,
+     "hop_median_ms": 222.99,
+     "hop_max_ms": 239.96,
+     "realtime": false
+    },
+    {
+     "hop_ms": 500,
+     "lookahead_ms": 500,
+     "si_sdri": 8.074,
+     "offline_si_sdri": 8.823,
+     "hop_median_ms": 224.61,
+     "hop_max_ms": 231.05,
+     "realtime": true
+    }
+   ],
+   "java_heap_mb": 30.0,
+   "samples": [
+    {
+     "id": "2spk_1",
+     "si_sdri": 11.101,
+     "pc": 11.164,
+     "ms": 378.3
+    },
+    {
+     "id": "2spk_2",
+     "si_sdri": 11.119,
+     "pc": 11.112,
+     "ms": 339.5
+    },
+    {
+     "id": "2spk_3",
+     "si_sdri": 11.036,
+     "pc": 11.076,
+     "ms": 373.5
+    },
+    {
+     "id": "3spk_1",
+     "si_sdri": 8.823,
+     "pc": 8.811,
+     "ms": 467.6
+    },
+    {
+     "id": "3spk_2",
+     "si_sdri": 9.779,
+     "pc": 9.756,
+     "ms": 431.6
+    },
+    {
+     "id": "3spk_3",
+     "si_sdri": 11.192,
+     "pc": 11.017,
+     "ms": 508.5
+    },
+    {
+     "id": "4spk_1",
+     "si_sdri": 8.632,
+     "pc": 8.593,
+     "ms": 362.6
+    },
+    {
+     "id": "4spk_2",
+     "si_sdri": 8.043,
+     "pc": 8.075,
+     "ms": 318.9
+    },
+    {
+     "id": "4spk_3",
+     "si_sdri": 8.866,
+     "pc": 8.903,
+     "ms": 314.5
+    }
+   ]
+  }
+ ],
+ "app": "TSE Edge v3 (ONNX Runtime Android 1.20, INT8)",
+ "interactive": {
+  "demo_3spk_3": {
+   "enroll_ms": 98,
+   "audio_s": 6.8,
+   "extract_ms": 594,
+   "rtf": 0.087,
+   "si_sdri": 11.19
+  },
+  "own_recordings": [
+   {
+    "audio_s": 8.0,
+    "enroll_ms": 117,
+    "extract_ms": 614,
+    "rtf": 0.077
+   },
+   {
+    "audio_s": 8.0,
+    "enroll_ms": 75,
+    "extract_ms": 624,
+    "rtf": 0.078
+   },
+   {
+    "audio_s": 8.0,
+    "enroll_ms": 140,
+    "extract_ms": 656,
+    "rtf": 0.082
+   }
+  ],
+  "recording_rate_hz": 8000
+ }
+}

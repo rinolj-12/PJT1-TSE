@@ -1,0 +1,50 @@
+# U-eConv-TSE (proposed). Unlisted keys take the defaults in src/tse/config.py.
+name: proposed
+seed: 42
+
+data:
+  root: ../data/Libri2Mix     # relative to tse_project/; or pass --data-root
+  sample_rate: 8000
+  mode: min
+  mix_type: clean
+  segment_seconds: 3.0
+  enroll_seconds_train: 4.0
+  enroll_seconds_eval: 6.0
+  val_subset: 500
+
+model:
+  type: ueconv_tse
+  N: 512
+  L: 16
+  stride: 8
+  B: 128
+  H: 512
+  Q: 4
+  K: 5
+  R: 3
+  spk_dim: 256
+  separator: ublock
+  fusion: film
+  inject: every_stage
+  use_ges_interference: true
+  use_mgfa: true
+  mgfa_beta: channel
+  upsample: nearest
+  spk_encoder: resnet
+  share_encoder: true
+
+loss:
+  lambda_ce: 0.5
+  lambda_int: 0.1
+
+train:
+  batch_size: 8
+  lr: 1.0e-3
+  weight_decay: 0.0
+  grad_clip: 5.0
+  max_epochs: 100
+  lr_factor: 0.5
+  lr_patience: 3
+  early_stop_patience: 12
+  amp: none
+  num_workers: 4

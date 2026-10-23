@@ -1,0 +1,16 @@
+# Deeper U-eConv-TSE (R=6 stages instead of 3) trained from scratch on dynamically mixed
+# 2-4 speaker mixtures. Targets the leakage seen on 3-4 speaker mixtures with more separator
+# capacity. Same data recipe and validation as configs/finetune_multispk.yaml, so the two are
+# directly comparable (fine-tuned R=3 vs from-scratch R=6).
+base: finetune_multispk.yaml
+name: multispk_deep_r6
+
+model:
+  R: 6
+
+train:
+  init_from: null          # from scratch
+  lr: 1.0e-3
+  max_epochs: 80
+  lr_patience: 3
+  early_stop_patience: 12
